@@ -24,8 +24,7 @@ pub fn main() void {
     while (n <= 20) : (n += 1) {
         // The '%' symbol is the "modulo" operator and it
         // returns the remainder after division.
-        if (n % 3 == 0) continue;
-        if (n % 5 == 0) continue;
+        if (n % 3 == 0 or n % 5 == 0) continue;
         std.debug.print("{} ", .{n});
     }
 
