@@ -20,7 +20,7 @@
 const std = @import("std");
 
 // Please complete the enum!
-const Ops = enum { ??? };
+const Ops = enum { dec, inc, pow };
 
 pub fn main() void {
     const operations = [_]Ops{
